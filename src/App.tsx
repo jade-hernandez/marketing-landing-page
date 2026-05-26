@@ -1,4 +1,5 @@
 import { Navbar } from "./blocks/navigation/Navbar";
+import { Footer } from "./blocks/footer/Footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <div className='mt-4 flex w-full flex-col rounded-md bg-white'>
         <main className='flex flex-col'></main>
+        <Footer />
       </div>
     </div>
   );
