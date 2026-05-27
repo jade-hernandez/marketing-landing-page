@@ -1,4 +1,5 @@
 import { Navbar } from "./blocks/navigation/Navbar";
+import { HeroSection } from "./blocks/hero-section/HeroSection";
 import { Footer } from "./blocks/footer/Footer";
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
     >
       <Navbar />
       <div className='mt-4 flex w-full flex-col rounded-md bg-white'>
-        <main className='flex flex-col'></main>
+        <main className='flex flex-col'>
+          <HeroSection />
+        </main>
         <Footer />
       </div>
     </div>
