@@ -2,6 +2,7 @@ import { Navbar } from "./blocks/navigation/Navbar";
 import { HeroSection } from "./blocks/hero-section/HeroSection";
 import { LogoMarquee } from "./blocks/logo-marquee-section/LogoMarquee";
 import { Footer } from "./blocks/footer/Footer";
+import { ContactSection } from "./blocks/contact-section/ContactSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <main className='flex flex-col'>
           <HeroSection />
           <LogoMarquee />
+          <ContactSection />
         </main>
         <Footer />
       </div>
