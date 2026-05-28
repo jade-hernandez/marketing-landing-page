@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+/*
+  @theme and @utility are Tailwind CSS v4 directives.
+  They may be flagged as unknown at-rules by the VS Code CSS language server,
+  as it does not yet fully support Tailwind CSS v4 syntax.
+  This is a known issue: https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1565
+*/
+
+@theme {
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@utility animate-pause {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation-play-state: paused;
+  }
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
