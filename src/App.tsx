@@ -1,5 +1,6 @@
 import { Navbar } from "./blocks/navigation/Navbar";
 import { HeroSection } from "./blocks/hero-section/HeroSection";
+import { LogoMarquee } from "./blocks/logo-marquee-section/LogoMarquee";
 import { Footer } from "./blocks/footer/Footer";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <div className='mt-4 flex w-full flex-col rounded-md bg-white'>
         <main className='flex flex-col'>
           <HeroSection />
+          <LogoMarquee />
         </main>
         <Footer />
       </div>
