@@ -1,5 +1,5 @@
 import { cardsData } from "./features-data";
-import { FeatureCard } from "./FeatureCard";
+import { FeaturesCard } from "./FeaturesCard";
 
 function FeaturesSection() {
   return (
@@ -25,7 +25,7 @@ function FeaturesSection() {
 
       <div className='flex flex-col items-start justify-center gap-8 md:flex-row md:flex-wrap lg:gap-y-12'>
         {cardsData.map(card => (
-          <FeatureCard
+          <FeaturesCard
             key={card.title}
             icon={card.icon}
             title={card.title}

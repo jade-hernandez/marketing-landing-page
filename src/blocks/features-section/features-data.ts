@@ -6,15 +6,15 @@ import { DollarIcon } from "./icons/DollarIcon";
 import { PeopleIcon } from "./icons/PeopleIcon";
 import { LoopIcon } from "./icons/LoopIcon";
 
-export type FeatureCardData = {
+export type FeaturesCardData = {
   icon: ComponentType;
   title: string;
   content: string;
 };
 
-export type FeatureCardProps = FeatureCardData;
+export type FeaturesCardProps = FeaturesCardData;
 
-export const cardsData: FeatureCardData[] = [
+export const cardsData: FeaturesCardData[] = [
   {
     icon: DownloadIcon,
     title: "Infinite Download",

@@ -1,6 +1,6 @@
-import type { FeatureCardProps } from "./features-data";
+import type { FeaturesCardProps } from "./features-data";
 
-function FeatureCard({ icon: Icon, title, content }: FeatureCardProps) {
+function FeaturesCard({ icon: Icon, title, content }: FeaturesCardProps) {
   return (
     <article className='mx-auto flex w-full max-w-md flex-col items-center justify-center gap-5 md:max-w-[calc(50%-16px)] lg:max-w-[384px]'>
       <Icon aria-hidden='true' />
@@ -12,4 +12,4 @@ function FeatureCard({ icon: Icon, title, content }: FeatureCardProps) {
   );
 }
 
-export { FeatureCard };
+export { FeaturesCard };
