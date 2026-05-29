@@ -30,9 +30,9 @@ function LogoMarquee() {
   return (
     <section
       aria-labelledby='marquee-heading'
-      className='mx-auto flex w-full max-w-[calc(100%-1rem)] flex-col items-center py-12 md:py-16 lg:py-24'
+      className='mx-auto flex w-full flex-col items-center py-12 md:py-16 lg:py-24'
     >
-      <div className='flex w-full flex-1 flex-col items-center justify-center gap-8 rounded-md bg-white px-15.5 md:px-8.25 lg:px-2'>
+      <div className='flex w-full flex-1 flex-col items-center justify-center gap-8 rounded-md bg-white px-15.5 md:px-8.25 lg:px-0'>
         <h2
           id='marquee-heading'
           className='text-base text-neutral-600'
