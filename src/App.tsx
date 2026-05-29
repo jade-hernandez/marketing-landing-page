@@ -5,6 +5,8 @@ import { LogoMarquee } from "./blocks/logo-marquee-section/LogoMarquee";
 import { FeaturesSection } from "./blocks/features-section/FeaturesSection";
 import { DesignerFeatures } from "./blocks/designer-features-section/DesignerFeatures";
 import { ConvenienceFeatures } from "./blocks/convenience-features-section/ConvenienceFeatures";
+import { PricingTiers } from "./blocks/pricing-tiers-section/PricingTiers";
+import { FaqSection } from "./blocks/faq-section/FaqSection";
 import { ContactSection } from "./blocks/contact-section/ContactSection";
 
 import { Footer } from "./blocks/footer/Footer";
@@ -23,6 +25,8 @@ function App() {
           <FeaturesSection />
           <DesignerFeatures />
           <ConvenienceFeatures />
+          <PricingTiers />
+          <FaqSection />
           <ContactSection />
         </main>
         <Footer />
