@@ -3,6 +3,7 @@ import { Navbar } from "./blocks/navigation/Navbar";
 import { HeroSection } from "./blocks/hero-section/HeroSection";
 import { LogoMarquee } from "./blocks/logo-marquee-section/LogoMarquee";
 import { FeaturesSection } from "./blocks/features-section/FeaturesSection";
+import { DesignerFeatures } from "./blocks/designer-features-section/DesignerFeatures";
 import { ConvenienceFeatures } from "./blocks/convenience-features-section/ConvenienceFeatures";
 import { ContactSection } from "./blocks/contact-section/ContactSection";
 
@@ -20,6 +21,7 @@ function App() {
           <HeroSection />
           <LogoMarquee />
           <FeaturesSection />
+          <DesignerFeatures />
           <ConvenienceFeatures />
           <ContactSection />
         </main>
