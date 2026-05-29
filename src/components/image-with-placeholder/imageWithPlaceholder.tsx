@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { cn } from "../../utils/utils";
 
 type ImageWithPlaceholderProps = {
+  imgClassNames?: string;
   altText: string;
   images: {
     mobileImagePlaceholder: string;
@@ -13,6 +15,7 @@ type ImageWithPlaceholderProps = {
 };
 
 function ImageWithPlaceholder({
+  imgClassNames,
   altText,
   images: {
     mobileImagePlaceholder,
@@ -40,7 +43,7 @@ function ImageWithPlaceholder({
           <img
             src={desktopImagePlaceholder}
             alt=''
-            className='size-fit md:h-98.5 lg:max-w-148'
+            className={cn("size-fit md:h-98.5 lg:max-w-148", imgClassNames || "")}
           />
         </picture>
       )}
@@ -58,7 +61,7 @@ function ImageWithPlaceholder({
           alt={altText}
           onLoad={() => setIsLoaded(true)}
           onError={() => setIsLoaded(true)}
-          className='size-fit'
+          className={cn("size-fit md:h-98.5 lg:max-w-148", imgClassNames || "")}
         />
       </picture>
     </div>
