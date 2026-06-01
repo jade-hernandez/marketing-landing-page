@@ -1,10 +1,10 @@
-import { FeatureIcon } from "./FeatureIcon";
+import { CheckIcon } from "../../components/icons/CheckIcon";
 
 function FeatureListItem({ content }: { content: string }) {
   return (
     <li className='flex gap-3'>
       <div className='flex shrink-0 items-center justify-center'>
-        <FeatureIcon />
+        <CheckIcon />
       </div>
       <span className='text-neutral-600'>{content}</span>
     </li>
