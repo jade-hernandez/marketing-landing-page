@@ -1,16 +1,12 @@
 import { useReducer } from "react";
 
 import { validateEmail } from "../../utils/validation";
+import type { ToastState } from "../../utils/types";
 
 export const MAX_MESSAGE_LENGTH = 500;
 
 const FALLBACK_ERROR =
   "Failed to submit. Please ensure your details are correct or try again later.";
-
-export type ToastState = {
-  type: "success" | "error";
-  message: string;
-};
 
 type FormState = {
   name: string;
