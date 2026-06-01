@@ -7,6 +7,7 @@ import { DesignerFeatures } from "./blocks/designer-features-section/DesignerFea
 import { ConvenienceFeatures } from "./blocks/convenience-features-section/ConvenienceFeatures";
 import { PricingTiers } from "./blocks/pricing-tiers-section/PricingTiers";
 import { FaqSection } from "./blocks/faq-section/FaqSection";
+import { NewsletterSection } from "./blocks/newsletter-section/NewsletterSection";
 import { ContactSection } from "./blocks/contact-section/ContactSection";
 
 import { Footer } from "./blocks/footer/Footer";
@@ -27,6 +28,7 @@ function App() {
           <ConvenienceFeatures />
           <PricingTiers />
           <FaqSection />
+          <NewsletterSection />
           <ContactSection />
         </main>
         <Footer />
