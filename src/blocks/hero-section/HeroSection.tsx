@@ -46,7 +46,7 @@ function HeroSection() {
           </Button>
         </div>
       </div>
-      <div className='overflow-hidden rounded-2xl md:max-w-180 xl:max-w-174'>
+      <div className='overflow-hidden rounded-lg md:max-w-180 xl:max-w-174'>
         <ImageWithPlaceholder
           imgClassNames='md:h-131.5 lg:max-w-174'
           altText='An abstract representation of creativity and design'

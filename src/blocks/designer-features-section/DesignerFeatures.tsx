@@ -66,17 +66,19 @@ function DesignerFeatures() {
             />
           ))}
         </div>
-        <ImageWithPlaceholder
-          altText='An abstract representation of creativity and design'
-          images={{
-            mobileImagePlaceholder: DESIGNER_FEATURES_MOBILE_BLUR,
-            tabletImagePlaceholder: DESIGNER_FEATURES_TABLET_BLUR,
-            desktopImagePlaceholder: DESIGNER_FEATURES_DESKTOP_BLUR,
-            mobileImage: DesignerFeaturesMobile,
-            tabletImage: DesignerFeaturesTablet,
-            desktopImage: DesignerFeaturesDesktop
-          }}
-        />
+        <div className='overflow-hidden rounded-lg'>
+          <ImageWithPlaceholder
+            altText='An abstract representation of creativity and design'
+            images={{
+              mobileImagePlaceholder: DESIGNER_FEATURES_MOBILE_BLUR,
+              tabletImagePlaceholder: DESIGNER_FEATURES_TABLET_BLUR,
+              desktopImagePlaceholder: DESIGNER_FEATURES_DESKTOP_BLUR,
+              mobileImage: DesignerFeaturesMobile,
+              tabletImage: DesignerFeaturesTablet,
+              desktopImage: DesignerFeaturesDesktop
+            }}
+          />
+        </div>
       </div>
     </section>
   );

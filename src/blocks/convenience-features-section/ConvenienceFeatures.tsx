@@ -57,17 +57,19 @@ function ConvenienceFeatures() {
         </p>
       </div>
       <div className='mx-auto flex flex-col items-center justify-between gap-12 lg:flex-row lg:items-start lg:gap-8'>
-        <ImageWithPlaceholder
-          altText='An abstract representation of creativity and design'
-          images={{
-            mobileImagePlaceholder: CONVENIENCE_FEATURES_MOBILE_BLUR,
-            tabletImagePlaceholder: CONVENIENCE_FEATURES_TABLET_BLUR,
-            desktopImagePlaceholder: CONVENIENCE_FEATURES_DESKTOP_BLUR,
-            mobileImage: ConvenienceFeaturesMobile,
-            tabletImage: ConvenienceFeaturesTablet,
-            desktopImage: ConvenienceFeaturesDesktop
-          }}
-        />
+        <div className='overflow-hidden rounded-lg'>
+          <ImageWithPlaceholder
+            altText='An abstract representation of creativity and design'
+            images={{
+              mobileImagePlaceholder: CONVENIENCE_FEATURES_MOBILE_BLUR,
+              tabletImagePlaceholder: CONVENIENCE_FEATURES_TABLET_BLUR,
+              desktopImagePlaceholder: CONVENIENCE_FEATURES_DESKTOP_BLUR,
+              mobileImage: ConvenienceFeaturesMobile,
+              tabletImage: ConvenienceFeaturesTablet,
+              desktopImage: ConvenienceFeaturesDesktop
+            }}
+          />
+        </div>
         <div className='flex flex-col gap-10'>
           {convenienceFeatures.map((card, index) => (
             <FeatureCard
