@@ -43,7 +43,7 @@ function NewsletterSection() {
       )}
       <section
         aria-labelledby='newsletter-heading'
-        className='mx-auto flex max-w-[calc(100%-1.5rem)] flex-col items-center justify-center gap-4 py-12 md:max-w-[calc(100%-2rem)] md:gap-8 md:py-16 xl:flex-row xl:py-24'
+        className='mx-auto flex max-w-[calc(100%-1.5rem)] flex-col items-center justify-center gap-4 py-12 md:max-w-[calc(100%-2rem)] md:gap-16 md:py-16 xl:flex-row xl:py-24'
       >
         <div className='flex flex-col gap-12 xl:max-w-148'>
           <div className='flex flex-col gap-8 md:gap-16'>
