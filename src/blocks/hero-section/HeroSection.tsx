@@ -26,10 +26,9 @@ function HeroSection() {
             <span className='hidden xl:block'>From a tiny desk to the entire world</span>
           </h1>
 
-          <p className='h-fit w-full text-lg text-neutral-600 md:text-xl'>
-            As a lean, passionate team, we've made something that most would think is impossible -
-            premium abstract images for free and for all.
-          </p>
+          <span className='h-fit w-full text-lg text-neutral-600 md:text-xl'>
+            High quality abstract images for your projects, wallpaper and presentations.
+          </span>
         </div>
         <div className='flex w-full max-w-114.5 gap-4 md:gap-8 xl:max-w-95.75'>
           <Button
