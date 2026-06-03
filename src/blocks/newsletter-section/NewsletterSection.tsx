@@ -43,7 +43,7 @@ function NewsletterSection() {
       )}
       <section
         aria-labelledby='newsletter-heading'
-        className='mx-auto flex max-w-[calc(100%-1.5rem)] flex-col items-center justify-center gap-12 py-12 md:max-w-[calc(100%-2rem)] md:gap-8 md:py-16 xl:flex-row xl:py-24'
+        className='mx-auto flex max-w-[calc(100%-1.5rem)] flex-col items-center justify-center gap-4 py-12 md:max-w-[calc(100%-2rem)] md:gap-8 md:py-16 xl:flex-row xl:py-24'
       >
         <div className='flex flex-col gap-12 xl:max-w-148'>
           <div className='flex flex-col gap-8 md:gap-16'>
@@ -105,16 +105,18 @@ function NewsletterSection() {
               variant='primary'
               size='md'
               disabled={isLoading}
-              className='text-sm md:w-auto'
+              className='order-4 text-sm md:order-3 md:w-auto'
             >
               {isLoading ? "Subscribing..." : "Subscribe"}
             </Button>
-            <span className='text-base text-neutral-600'>We only send you the best! No spam.</span>
+            <span className='order-3 text-base text-neutral-600 md:order-4'>
+              We only send you the best! No spam.
+            </span>
           </form>
         </div>
-        <div className='overflow-hidden rounded-2xl'>
+        <div className='overflow-hidden rounded-lg md:max-w-176'>
           <ImageWithPlaceholder
-            imgClassNames='xl:size-full'
+            imgClassNames='h-72 md:h-152 xl:size-full'
             altText='Abstract art newsletter preview'
             images={{
               mobileImagePlaceholder: NEWSLETTER_IMAGE_MOBILE_BLUR,
