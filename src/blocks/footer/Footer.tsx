@@ -10,9 +10,9 @@ function Footer() {
       {footerLinks.length > 0 && (
         <nav aria-label='Footer navigation'>
           <div className='flex items-center justify-center gap-5 lg:gap-6'>
-            {footerLinks.map(({ path, key, title }) => (
+            {footerLinks.map(({ path, id, title }) => (
               <Link
-                key={key}
+                key={id}
                 href={path}
                 variant='linkGray'
                 size='md-link'
@@ -28,9 +28,9 @@ function Footer() {
       <div className='flex flex-col items-center justify-center gap-4'>
         {footerIcons.length > 0 && (
           <div className='flex items-center justify-center gap-6'>
-            {footerIcons.map(({ key, icon: Icon, label, href }) => (
+            {footerIcons.map(({ id, icon: Icon, label, href }) => (
               <Link
-                key={key}
+                key={id}
                 href={href}
                 variant='linkGray'
                 size='icon-md'
